@@ -23,6 +23,8 @@ namespace CalculatorApp
         public MainWindow()
         {
             InitializeComponent();
+            this.Title = "Tyrell's Calculator";
         }
+
     }
 }
