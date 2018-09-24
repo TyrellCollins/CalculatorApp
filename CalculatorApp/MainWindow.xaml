@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculatorApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tyrell's Calculator" Height="450" Width="800">
     <Grid>
-        <Button Content="+" HorizontalAlignment="Left" Height="50" Margin="520,25,0,0" VerticalAlignment="Top" Width="50"/>
-        <Button Content="-" HorizontalAlignment="Left" Height="50" Margin="590,25,0,0" VerticalAlignment="Top" Width="50"/>
-        <Button Content="*" HorizontalAlignment="Left" Height="50" Margin="520,85,0,0" VerticalAlignment="Top" Width="50"/>
-        <Button Content="/" HorizontalAlignment="Left" Height="50" Margin="590,85,0,0" VerticalAlignment="Top" Width="50"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="405,109,0,0"><Run Text="Answer"/><LineBreak/><Run/></TextBlock>
-        <ToolBar HorizontalAlignment="Left" Height="16" Margin="370,126,0,0" VerticalAlignment="Top" Width="110"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="370,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="370,71,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonAddition" Content="+" HorizontalAlignment="Left" Height="50" Margin="520,25,0,0" VerticalAlignment="Top" Width="50" Click="buttonAddition_Click"/>
+        <Button x:Name="buttonSubtract" Content="-" HorizontalAlignment="Left" Height="50" Margin="590,25,0,0" VerticalAlignment="Top" Width="50" Click="buttonSubtract_Click"/>
+        <Button x:Name="buttonMultiply" Content="*" HorizontalAlignment="Left" Height="50" Margin="520,85,0,0" VerticalAlignment="Top" Width="50" Click="buttonMultiply_Click"/>
+        <Button x:Name="buttonDivide" Content="/" HorizontalAlignment="Left" Height="50" Margin="590,85,0,0" VerticalAlignment="Top" Width="50" Click="buttonDivide_Click"/>
+        <TextBlock x:Name="Answer" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="405,109,0,0"><Run Text="Answer"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="AnswerReturn" HorizontalAlignment="Left" Height="16" Margin="370,126,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="370,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="370,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
